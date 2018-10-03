@@ -1,9 +1,9 @@
-<h1>Product List </h1>
-<div>
-  <% cart.each do |p| %>
+
+<ul>
+  <%= cart.each do |p| %>
   <li><%= p %></li>
   <% end %>
-</div>
+</ul>
 
 <%= form_tag ({controller: 'products',
     action: 'add',
