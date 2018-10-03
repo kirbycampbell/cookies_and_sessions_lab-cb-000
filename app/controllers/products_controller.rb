@@ -8,6 +8,15 @@ class ProductsController < ApplicationController
     @product = Product.new(product_params)
   end
 
+  def create
+    @product = Product.new(product_params)
+    if @product.save
+      redirect_to @product
+    else
+      render :add alert: "Add Item PLZ"
+    end
+  end
+
 
   private
 
