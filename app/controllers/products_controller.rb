@@ -11,6 +11,7 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     if @product.save
+
       redirect_to @product
     else
       render :add alert: "Add Item PLZ"
