@@ -14,7 +14,7 @@ class ProductsController < ApplicationController
 
       redirect_to @product
     else
-      render :add alert: "Add Item PLZ"
+      render :add
     end
   end
 
